@@ -712,31 +712,11 @@ Priorités de tests recommandées:
 1. tests d'autorisation par rôle (web + API),
 2. tests workflow ticket (approbation/refus),
 3. tests d'intégration storeTemps (propagation projet/contrat),
-4. tests de cohérence enum DB vs validations Laravel.
+4. tests de cohérence enum DB vs validations Laravel
 
 ---
 
-## 15) Écarts et points de vigilance identifiés
-
-1. Incohérence potentielle ticket.statut
-   - code utilise valeur bloque,
-   - enum SQL fournie ne contient pas bloque.
-
-2. Contrat.type
-   - SQL: Inclus/Facturable (majuscules),
-   - code ticket: inclus/facturable (minuscules) sur autre concept,
-   - bien distinguer Ticket.type et Contrat.type.
-
-3. API validations
-   - plusieurs champs validés en string générique côté API,
-   - privilégier des règles in:... alignées sur enums SQL.
-
-4. Dashboard admin
-   - KPI projets_en_cours filtre statut en_cours, alors que la table projets utilise actif/archive.
-
----
-
-## 16) Conventions de développement du projet
+## 15) Conventions de développement du projet
 
 - Nomenclature francophone pour domaine métier.
 - Tables pivots explicites avec noms métier.
@@ -745,7 +725,7 @@ Priorités de tests recommandées:
 
 ---
 
-## 17) Annexes: mapping rapide entités -> tables
+## 16) Annexes: mapping rapide entités -> tables
 
 | Modèle | Table |
 |---|---|
@@ -766,7 +746,7 @@ Pivots:
 
 ---
 
-## 18) Conclusion
+## 17) Conclusion
 
 Ce projet implémente une base solide de gestion opérationnelle ERP/CRM avec:
 
