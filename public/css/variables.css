@@ -1,0 +1,98 @@
+/* ============================================
+   VECTOR — CSS Custom Properties (Variables)
+   ============================================ */
+
+:root {
+    /* Couleurs principales */
+    --primary-color: #1a2b4a;
+    --primary-light: #2c4270;
+    --primary-dark: #0f1a2e;
+    --accent-color: #3d7cf5;
+    --accent-hover: #2563e8;
+
+    /* Rôles */
+    --color-admin: #e74c3c;
+    --color-collaborateur: #3498db;
+    --color-client: #2ecc71;
+
+    /* Statuts */
+    --color-actif: #2ecc71;
+    --color-inactif: #95a5a6;
+    --color-ouvert: #3498db;
+    --color-en-cours: #e67e22;
+    --color-resolu: #2ecc71;
+    --color-ferme: #95a5a6;
+
+    /* Priorités */
+    --color-urgente: #e74c3c;
+    --color-haute: #e67e22;
+    --color-normale: #3498db;
+    --color-basse: #2ecc71;
+
+    /* Fonds et textes (thème clair) */
+    --bg-primary: #f4f6f9;
+    --bg-secondary: #ffffff;
+    --bg-card: #ffffff;
+    --bg-header: #1a2b4a;
+    --bg-sidebar: #1e3254;
+
+    --text-primary: #1a2b4a;
+    --text-secondary: #5a6a7e;
+    --text-muted: #8a9bb0;
+    --text-light: #ffffff;
+    --text-on-primary: #ffffff;
+
+    /* Bordures */
+    --border-color: #dde3ec;
+    --border-radius: 8px;
+    --border-radius-lg: 12px;
+    --border-radius-sm: 4px;
+
+    /* Ombres */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.12);
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.16);
+
+    /* Espacements */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    --spacing-2xl: 48px;
+
+    /* Typography */
+    --font-family: "Oswald", sans-serif;
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-md: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.25rem;
+    --font-size-2xl: 1.5rem;
+    --font-size-3xl: 2rem;
+
+    /* Header */
+    --header-height: 64px;
+
+    /* Transitions */
+    --transition-fast: 150ms ease;
+    --transition-normal: 250ms ease;
+}
+
+/* ── Thème sombre ─────────────────────────────── */
+[data-theme="dark"] {
+    --bg-primary: #0f1a2e;
+    --bg-secondary: #1a2b4a;
+    --bg-card: #1e3254;
+    --bg-header: #0f1a2e;
+    --bg-sidebar: #0d1728;
+
+    --text-primary: #e8edf5;
+    --text-secondary: #a0b0c8;
+    --text-muted: #6a7d96;
+
+    --border-color: #2c4270;
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.5);
+}

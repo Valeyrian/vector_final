@@ -1,0 +1,248 @@
+{
+    "clients": [
+        {
+            "Field": "id",
+            "Type": "bigint(20) unsigned",
+            "Null": "NO",
+            "Key": "PRI",
+            "Default": null,
+            "Extra": "auto_increment"
+        },
+        {
+            "Field": "nom",
+            "Type": "varchar(255)",
+            "Null": "NO",
+            "Key": "",
+            "Default": null,
+            "Extra": ""
+        },
+        {
+            "Field": "adresse",
+            "Type": "varchar(255)",
+            "Null": "YES",
+            "Key": "",
+            "Default": null,
+            "Extra": ""
+        },
+        {
+            "Field": "code_postal",
+            "Type": "varchar(10)",
+            "Null": "YES",
+            "Key": "",
+            "Default": null,
+            "Extra": ""
+        },
+        {
+            "Field": "ville",
+            "Type": "varchar(100)",
+            "Null": "YES",
+            "Key": "",
+            "Default": null,
+            "Extra": ""
+        },
+        {
+            "Field": "pays",
+            "Type": "varchar(100)",
+            "Null": "NO",
+            "Key": "",
+            "Default": "France",
+            "Extra": ""
+        },
+        {
+            "Field": "statut",
+            "Type": "enum('actif','inactif')",
+            "Null": "NO",
+            "Key": "",
+            "Default": "actif",
+            "Extra": ""
+        },
+        {
+            "Field": "created_at",
+            "Type": "timestamp",
+            "Null": "YES",
+            "Key": "",
+            "Default": null,
+            "Extra": ""
+        },
+        {
+            "Field": "updated_at",
+            "Type": "timestamp",
+            "Null": "YES",
+            "Key": "",
+            "Default": null,
+            "Extra": ""
+        }
+    ],
+    "projets": [
+        {
+            "Field": "id",
+            "Type": "bigint(20) unsigned",
+            "Null": "NO",
+            "Key": "PRI",
+            "Default": null,
+            "Extra": "auto_increment"
+        },
+        {
+            "Field": "nom",
+            "Type": "varchar(255)",
+            "Null": "NO",
+            "Key": "",
+            "Default": null,
+            "Extra": ""
+        },
+        {
+            "Field": "description",
+            "Type": "text",
+            "Null": "YES",
+            "Key": "",
+            "Default": null,
+            "Extra": ""
+        },
+        {
+            "Field": "statut",
+            "Type": "enum('actif','archive')",
+            "Null": "NO",
+            "Key": "",
+            "Default": "actif",
+            "Extra": ""
+        },
+        {
+            "Field": "date_debut",
+            "Type": "date",
+            "Null": "YES",
+            "Key": "",
+            "Default": null,
+            "Extra": ""
+        },
+        {
+            "Field": "date_fin_prevue",
+            "Type": "date",
+            "Null": "YES",
+            "Key": "",
+            "Default": null,
+            "Extra": ""
+        },
+        {
+            "Field": "created_at",
+            "Type": "timestamp",
+            "Null": "YES",
+            "Key": "",
+            "Default": null,
+            "Extra": ""
+        },
+        {
+            "Field": "updated_at",
+            "Type": "timestamp",
+            "Null": "YES",
+            "Key": "",
+            "Default": null,
+            "Extra": ""
+        }
+    ],
+    "contrats": [
+        {
+            "Field": "id",
+            "Type": "bigint(20) unsigned",
+            "Null": "NO",
+            "Key": "PRI",
+            "Default": null,
+            "Extra": "auto_increment"
+        },
+        {
+            "Field": "nom",
+            "Type": "varchar(255)",
+            "Null": "NO",
+            "Key": "",
+            "Default": null,
+            "Extra": ""
+        },
+        {
+            "Field": "type",
+            "Type": "enum('Inclus','Facturable')",
+            "Null": "NO",
+            "Key": "",
+            "Default": null,
+            "Extra": ""
+        },
+        {
+            "Field": "heures_totales",
+            "Type": "decimal(7,2)",
+            "Null": "NO",
+            "Key": "",
+            "Default": "0.00",
+            "Extra": ""
+        },
+        {
+            "Field": "heures_consommees",
+            "Type": "decimal(7,2)",
+            "Null": "NO",
+            "Key": "",
+            "Default": "0.00",
+            "Extra": ""
+        },
+        {
+            "Field": "taux_horaire",
+            "Type": "decimal(8,2)",
+            "Null": "NO",
+            "Key": "",
+            "Default": "0.00",
+            "Extra": ""
+        },
+        {
+            "Field": "montant_total",
+            "Type": "decimal(10,2)",
+            "Null": "NO",
+            "Key": "",
+            "Default": "0.00",
+            "Extra": ""
+        },
+        {
+            "Field": "date_debut",
+            "Type": "date",
+            "Null": "NO",
+            "Key": "",
+            "Default": null,
+            "Extra": ""
+        },
+        {
+            "Field": "date_fin",
+            "Type": "date",
+            "Null": "NO",
+            "Key": "",
+            "Default": null,
+            "Extra": ""
+        },
+        {
+            "Field": "conditions",
+            "Type": "text",
+            "Null": "YES",
+            "Key": "",
+            "Default": null,
+            "Extra": ""
+        },
+        {
+            "Field": "statut",
+            "Type": "enum('actif','inactif','termine')",
+            "Null": "NO",
+            "Key": "",
+            "Default": "actif",
+            "Extra": ""
+        },
+        {
+            "Field": "created_at",
+            "Type": "timestamp",
+            "Null": "YES",
+            "Key": "",
+            "Default": null,
+            "Extra": ""
+        },
+        {
+            "Field": "updated_at",
+            "Type": "timestamp",
+            "Null": "YES",
+            "Key": "",
+            "Default": null,
+            "Extra": ""
+        }
+    ]
+}
